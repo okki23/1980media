@@ -1,0 +1,450 @@
+/* =Layout
+---------------------------------------------------------------*/
+body
+{
+	font-family: 'Trebuchet MS';
+	font-size : 14px;
+	line-height: 1.8;
+}
+h1,h2,h3,h4,h5,h6
+{
+	/*font-family: 'Lato', sans-serif;*/
+	font-family: 'Trebuchet MS';
+}
+p
+{
+	text-align: justify;
+}
+a
+{
+	color: #000;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+	color: #0B6A0C;
+}
+.media-body{
+	padding:0 3px;
+}
+/*-------------------------Navigation Bar----------------------*/
+.navbar
+{
+	color:#000;
+	padding-top:5px;
+	padding-bottom:15px;
+	letter-spacing: 5px;
+	background-color:transparent;
+	border:0;
+	position:absolute;
+	width:100%;
+	z-index:1;
+	-webkit-transition: .3s all;
+	transition: .3s all;
+}
+.navbar-nav
+{
+	border:0;
+}
+.navbar-brand
+{
+	float:left;
+	padding:0 15px 5px;
+}
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover
+{
+	color:#0B6A0C;
+	background-color:transparent;
+	font-weight: bold;
+}
+.navbar-inverse .navbar-nav li a:hover
+{
+	color:#000;
+}
+@media(max-width:576px){
+	.navbar{border:0;}
+	.navbar-nav
+	{
+		color:#000;
+
+		background-color:#232323;
+		border:0;
+		position:absolute;
+		width:100%;
+		z-index:1;
+		-webkit-transition: .3s all;
+		transition: .3s all;
+
+	}
+	img.logo{
+		width: auto;
+		height:auto;
+		max-width: 120px;
+		vertical-align:center;
+	}
+	.kons_box
+	{width: auto;max-width: 90%;font-size: auto;}
+}
+@media(max-width:768px){
+	img.logo{
+		width: auto;
+		height:auto;
+		max-width: 144px;
+		vertical-align:center;
+	}
+}
+
+/*------------------HEADER----------------------------*/
+header
+{
+	position:relative;
+}
+header img
+{
+	width:100%;
+}
+header form
+{
+	position:absolute;
+	width:auto;
+	background-color :#fff;
+	top:0;
+	width:350px;
+	height:auto;
+	right:5%;
+	top: 15%;
+	padding:15px;
+	opacity: 0.8;
+}
+header h4
+{
+	text-align: center;
+}
+.dropdown-menu li a
+{
+	letter-spacing: 1px;
+}
+
+.tagline
+{
+	width:auto;
+	height:auto;
+	background-color:#e5e9e8;
+	position:absolute;
+	opacity:0.27;
+	bottom:30%;
+	padding:2%;
+	font-weight:bold;
+	color:	#000;
+	display:none;
+}
+
+.tagline h2
+{
+	font-size:90px;
+}
+.tagline h5{
+	font-size : 50px;
+}
+
+
+/*------------------BODY--------------------------------*/
+#icon
+{
+	margin:1% auto;
+	width : 100px;
+	max-height:200px;
+}
+.main
+{
+	justify-content:center;
+	text-align:center;
+	margin:1% 0;
+	position:absolute;
+}
+.main form{
+position: static;
+
+top: 0px;
+}
+.form-group
+{
+	margin:15px;
+}
+.map
+{
+	width: 100%;
+}
+.middle{
+
+	position : relative;
+}
+.middle h4, .middle a
+{
+	text-align:center;
+	color:#0b6f0e;
+	font-weight:bold;
+}
+.bottom
+{
+	background-color:#eee;
+	width:100%;
+	margin:5% 0;
+	padding:2%;
+	position:relative;
+}
+.bottom .embed-responsive
+{
+	margin-top:5%;
+}
+.bottom .small-icon
+{
+		padding:5px;
+		margin:1%;
+		border-radius: 10%;
+    background-color: #0b6f0e;
+}
+
+.mini-box img, mini-box h4
+{
+	vertical-align:middle;
+	display:inline-block;
+}
+
+.span12
+{
+	width:90%;
+}
+.fa
+{
+	float:left;
+	padding:5px;
+	margin:3px;
+	font-size:20px;
+	color:#eee;
+
+}
+.fa:hover
+{
+	color:#D5D5D5;
+	text-decoration:none;
+}
+@media(max-width:900px)
+{
+	.fa{
+			font-size:15px;
+			padding:3px;
+		}
+		#icon
+		{
+			/*max-width:150px;*/
+		}
+	}
+	.contact
+	{
+	text-align:center;
+
+	}
+	@media(max-width:600px)
+	{
+		h2
+		{
+			font-size:1.9em;
+		}
+		.contact
+		{
+			text-align:left;
+		}
+		.logo{
+			width: 150px;
+		}
+	}
+	.wrapper
+	{
+		overflow:hidden;
+	}
+
+	 @keyframes slider{
+			0% {
+				transform: translate3d(0px, 0px, 0px);
+				-webkit-transform: translate3d(0px, 0px, 0px);
+				-o-transform: translate3d(0px, 0px, 0px);
+				-m-transform: translate3d(0px, 0px, 0px);
+			}
+
+			100% {
+				transform: translate3d(1692px, 0px, 0px);
+				-webkit-transform: translate3d(1692px, 0px, 0px);
+				-o-transform: translate3d(1692px, 0px, 0px);
+				-m-transform: translate3d(1692px, 0px, 0px);
+			}
+		}
+#klien
+{
+	animation: slider 30s linear infinite;
+	margin-left:100px;
+	margin-top:0px;
+	padding:0px;
+	background-color:#000;
+}
+/*--------------------------ABOUT----------------------------*/
+
+#about, #seo, #website .title
+{
+	text-align: left;
+	margin:3% 0%;
+	line-height: 25px;
+}
+
+
+	/*----------------------- SERVICES ---------------------------*/
+	.jumbotron{
+	  padding: 0px;
+	  margin: 0px;
+	  background-color: #ffffff;
+	}
+	.jumbotron img{
+	  width: 100%;
+	}
+	.pull-left
+	{
+		margin:15px;
+	}
+	.service
+	{
+			padding: 2.5em;
+	}
+	.service .grey-icon-left{
+		text-align: right;
+		border:none;
+		display: block;
+		margin-bottom: 50px;
+		font-size: 20px;
+		color: #000;
+	}
+	.service .grey-icon-right{
+		text-align: left;
+		border:none;
+		display: block;
+		margin-bottom: 50px;
+		font-size: 20px;
+	}
+	.service .icon {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	.service p{
+		vertical-align: middle;
+		display: inline;
+	}
+
+
+
+/*-------------------------SEO & SEM---------------------------------------*/
+
+#seo img{
+	width:250px;
+	
+}
+@media(max-width:640px)
+{
+	#seo img{width:auto;}
+}
+	/*----------------------- DIGITAL ADVERTISING ---------------------------*/
+
+	.service.left-icon {
+		padding: 0;
+		border: none;
+		margin-bottom: 20px !important;
+	}
+
+	.service.left-icon .icon {
+		width: 50px;
+		position: relative;
+		/*top: 15px;*/
+	}
+	.service.left-icon .icon, .service.left-icon .text {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.service.left-icon .icon i {
+		font-size: 18px;
+	}
+	.service .icon i {
+		font-size: 40px;
+		color: #eee;
+		border-radius: 50%;
+		background-color: #0B6A0C;
+		padding: 10px;
+	}
+	.bg-grey{
+    text-align: right;
+    background-color: #efefef;
+    color: #000000;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+	.title
+	{
+		text-align: center;
+		margin:3%;
+
+	}
+	.title u
+	{
+		text-decoration: none;
+  	text-align: center;
+		width: 50px;
+		line-height: 2;
+		border-bottom:3px solid #0B6A0C;
+	}
+/*--------------------------Marketing--------------------------------------*/
+
+/*----------------------------News Event-----------------------------------*/
+.news{
+
+	padding: 20px;
+}
+.article-list img
+{
+	float: left;
+	position: relative;
+	margin: 20px;
+}
+@media(max-width:624px){
+	
+	.article-list img{
+	margin:20px 0px;
+	
+	}	
+}
+/*-----------------------Footer-------------------------------------------*/
+
+	footer
+	{
+		width:100%;
+		background-color:#0B6A0C;
+		padding:3%;
+		color:#fff;
+	}
+	footer p, footer h4{
+		text-align:justify;
+
+	}
+	.fa-angle-double-up
+	{
+		background-color:#232323;
+		border-radius:50%;
+		padding: 5px;
+	}
+	section button, section button:hover{
+		background-color:inherit;
+		border:none;
+	}
+
+	/*---belum terpakai---*/

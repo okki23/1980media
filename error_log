@@ -1,0 +1,12 @@
+[01-Dec-2017 17:18:14 Asia/Jakarta] PHP Fatal error:  Call to undefined method M_simpanan::all_records() in /home/pcjbakab/public_html/application/modules/simpanan/controllers/Simpanan.php on line 26
+[01-Dec-2017 17:18:36 Asia/Jakarta] PHP Fatal error:  Call to undefined method M_simpanan::all_records() in /home/pcjbakab/public_html/application/modules/simpanan/controllers/Simpanan.php on line 26
+[05-Dec-2017 02:34:08 UTC] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT), expecting identifier (T_STRING) in /home/pcjbakab/public_html/application/modules/upload_neraca/controllers/Upload_neraca.php on line 29
+[05-Dec-2017 02:34:12 UTC] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT), expecting identifier (T_STRING) in /home/pcjbakab/public_html/application/modules/upload_neraca/controllers/Upload_neraca.php on line 29
+[05-Dec-2017 09:44:58 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/pcjbakab/public_html/application/modules/upload_neraca/views/edit_upload_neraca.php on line 14
+[05-Dec-2017 07:19:40 UTC] PHP Fatal error:  Cannot redeclare Donatur_member::rekap() in /home/pcjbakab/public_html/application/modules/donatur_member/controllers/Donatur_member.php on line 85
+[05-Dec-2017 07:19:42 UTC] PHP Fatal error:  Cannot redeclare Donatur_member::rekap() in /home/pcjbakab/public_html/application/modules/donatur_member/controllers/Donatur_member.php on line 85
+[05-Dec-2017 07:20:28 UTC] PHP Fatal error:  Cannot redeclare Donatur_member::rekap() in /home/pcjbakab/public_html/application/modules/donatur_member/controllers/Donatur_member.php on line 89
+[05-Dec-2017 07:20:42 UTC] PHP Fatal error:  Cannot redeclare Donatur_member::rekap() in /home/pcjbakab/public_html/application/modules/donatur_member/controllers/Donatur_member.php on line 89
+[26-Dec-2017 01:59:34 Asia/Jakarta] PHP Fatal error:  Call to a member function create_links() on null in /home/pcjbakab/public_html/application/views/template_frontend.php on line 302
+[26-Dec-2017 03:32:13 Asia/Jakarta] PHP Fatal error:  Call to a member function create_links() on null in /home/pcjbakab/public_html/application/views/template_frontend.php on line 302
+[12-Jan-2018 08:30:19 Asia/Jakarta] PHP Fatal error:  Call to a member function create_links() on null in /home/pcjbakab/public_html/application/views/template_frontend.php on line 302
