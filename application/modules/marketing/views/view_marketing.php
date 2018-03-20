@@ -92,19 +92,20 @@ s0.parentNode.insertBefore(s1,s0);
               <div class="title">
                 <h3><u>Form Permintaan</u></h3>
               </div>
-              <form id="contactForm" name="sentMessage" novalidate>
+              <form id="contactForm" name="sentMessage" action="<?php echo base_url('list_request/save'); ?>" method="POST">
+              <input type="hidden" class="form-control"  name="source" type="text" value="marketing">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input class="form-control" id="name" type="text" placeholder="Nama Anda" required data-validation-required-message="Please enter your name.">
+                      <input class="form-control" id="name" name="nama" type="text" placeholder="Nama Anda" required data-validation-required-message="Please enter your name.">
                       <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group">
-                      <input class="form-control" id="email" type="email" placeholder="Email" required data-validation-required-message="Please enter your email address.">
+                      <input class="form-control" id="email"  name="email" type="email" placeholder="Email" required data-validation-required-message="Please enter your email address.">
                       <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group">
-                      <input class="form-control" id="phone" placeholder="Phone" required data-validation-required-message="Please enter a message.">
+                      <input class="form-control" id="phone"  name="no_telp" placeholder="Phone" required data-validation-required-message="Please enter a message.">
                       <p class="help-block text-danger"></p>
                     </div>
                   </div>
@@ -112,7 +113,7 @@ s0.parentNode.insertBefore(s1,s0);
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <textarea class="form-control" id="pesan" rows = "6" placeholder="Pesan Anda" required data-validation-required-message="Please enter a message."></textarea>
+                      <textarea class="form-control" id="pesan"  name="pesan" rows = "6" placeholder="Pesan Anda" required data-validation-required-message="Please enter a message."></textarea>
                       <p class="help-block text-danger"></p>
                     </div>
                   </div>

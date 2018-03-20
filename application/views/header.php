@@ -20,7 +20,7 @@
 							<li><a href="<?php echo base_url('marketing'); ?>">Social Media Marketing</a></li>
 							<li><a href="<?php echo base_url('analytic'); ?>">Analytic</a></li>
 							<li><a href="<?php echo base_url('graphic'); ?>">Graphic Design</a></li>
-							<li><a href="javascript:void(0);">Web Dev. & Mobile Apps.</a></li>
+							<li><a href="<?php echo base_url('webdev'); ?>">Web Dev. & Mobile Apps.</a></li>
 						</ul>
 
 					</li>

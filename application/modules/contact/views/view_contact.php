@@ -73,15 +73,16 @@ s0.parentNode.insertBefore(s1,s0);
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.443426318679!2d106.7789503143133!3d-6.205090995507988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6db3dac5da3%3A0xe876541c9ae59eb2!2sJl.+Salam+Raya+Blok+Ilyas+No.65%2C+Sukabumi+Utara%2C+Kb.+Jeruk%2C+Kota+Jakarta+Barat%2C+Daerah+Khusus+Ibukota+Jakarta+11540!5e0!3m2!1sen!2sid!4v1518455013148" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 			<div class="col-sm-6" style="">
-				<form action="/action_page.php">
+			<form id="contactForm" name="sentMessage" action="<?php echo base_url('list_contact/save'); ?>" method="POST">
+              <input type="hidden" class="form-control"  name="source" type="text" value="contact">
 					<div class="form-group">
-					  <input type="email" class="form-control" id="nama" placeholder="Nama Anda" name="nama">
+					  <input type="text" class="form-control" id="nama" placeholder="Nama Anda" name="nama">
 					</div>
 					<div class="form-group">
 					  <input type="text" class="form-control" id="email" placeholder="Email anda" name="email">
 					</div>
 					<div class="form-group">
-					  <input type="text" class="form-control" id="phone" placeholder="No. HP Anda" name="hp">
+					  <input type="text" class="form-control" id="phone" placeholder="No. HP Anda" name="no_telp">
 					</div>
 					<div class="form-group">
 					  <textarea class="form-control" name="pesan" id="pesan" placeholder="Pesan Anda..." style="width:100%;" rows="5"></textarea>

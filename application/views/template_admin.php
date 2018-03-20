@@ -255,6 +255,15 @@
 								<b class="arrow"></b>
 							</li>
 
+							<li class="">
+								<a href="<?php echo base_url('list_contact'); ?>">
+									<i class="menu-icon fa fa-caret-right"></i>
+									List Contact Us
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
 							 
 						</ul>
 					</li>
@@ -292,7 +301,7 @@
 							</li>
 
 							<li class="">
-								<a href="<?php echo base_url('seo_page'); ?>">
+								<a href="<?php echo base_url('page_seo'); ?>">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Content SEO & SEM Services
 								</a>
@@ -352,7 +361,7 @@
 
 
 							<li class="">
-								<a href="<?php echo base_url('list_request_page'); ?>">
+								<a href="<?php echo base_url('list_request'); ?>">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Request List
 								</a>
@@ -367,7 +376,7 @@
 
 
 					<li>
-						<a href="<?php echo base_url('news-event_page'); ?>">
+						<a href="<?php echo base_url('news_event_page'); ?>">
 							<i class="menu-icon fa fa-star"></i>
 							<span class="menu-text"> News and Event </span>
 						</a>
