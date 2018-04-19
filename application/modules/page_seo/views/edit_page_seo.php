@@ -1,103 +1,205 @@
+
+        <div class="page-content">
+        	<div class="page-header">
+
+							<h1>
+							Services Editor Form  
+								 
+							</h1>
+
+		
+			</div><!-- /.page-header -->
+			<div class="page-content">
+
+								<div class="col-md-12"> 
+									<form name="page_seo" action="<?php echo base_url('page_seo/save'); ?>" method="POST" enctype="multipart/form-data">
+									<input type="hidden" name="id" value="<?php echo $list->id; ?>">
+									<div id="accordion" class="accordion-style1 panel-group">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+															<i class="ace-icon fa fa-angle-down bigger-110" data-icon-hide="ace-icon fa fa-angle-down" data-icon-show="ace-icon fa fa-angle-right"></i>
+															 Header Image
+														</a>
+													</h4>
+												</div>
+
+												<div class="panel-collapse collapse" id="collapseOne">
+													<div class="panel-body">
+												 
+
+													<div class="form-group">
+														<label class="col-md-3 control-label">Header Image
+														</label>
+														<div class="col-md-9">
+																<input type="file" name="header_imagex" id="header_imagex" class="form-control" />
+																<input type="hidden" name="header_image" id="header_image" value="<?php echo $list->header_image; ?>" class="form-control" />
+																<?php
+																if($list->header_image == '' || $list->header_image == NULL){
+																?>
+																
+																	<h5 class="label label-danger"> Foto Tidak Ditemukan </h5>
+																	
+																<?php
+																}else{
+																?>
+																	<br>
+																	<img src="<?php echo base_url('uploads/'.$list->header_image); ?>" style="width:250px; height:150px;">
+																	<br>
+																<?php
+																}
+																?>
+														</div>
+													</div>
+
+												
  
-<h1 align="center"> SEO & SEM Services Form    </h1>
-<form action="<?php echo base_url('page_seo/save') ;?>" method="POST">
-		<div class="col-md-12">
-		 		<input type="hidden" name="id" value="<?php echo $list->id; ?>" >
-                 <input type="hidden" name="last_update" value="<?php echo date('Y-m-d H:i:s'); ?>" >
-				<div class="form-group">
-				 
-				 
-				<textarea name="konten">   <?php echo $list->konten;?></textarea>
-				 
+
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+															<i class="ace-icon fa fa-angle-right bigger-110" data-icon-hide="ace-icon fa fa-angle-down" data-icon-show="ace-icon fa fa-angle-right"></i>
+															Section
+														</a>
+													</h4>
+												</div>
+
+												<div class="panel-collapse collapse" id="collapseTwo">
+													<div class="panel-body">
+												 
+													<div class="form-group">
+														<label class="col-md-3 control-label">First Title </label>
+														<div class="col-md-9">
+															
+															<input type="text" name="first_title" value="<?php echo $list->first_title; ?>"   class="form-control"   />
+														</div>
+													</div>
+
+													<br>
+													 
+													&nbsp;
+													<div class="form-group">
+														<label class="col-md-3 control-label">First Description Title </label>
+														<div class="col-md-9">
+															<textarea name="first_desc_title"> <?php echo $list->first_desc_title; ?> </textarea>
+														 
+														</div>
+													</div>
+
+													<br>
+													 
+													&nbsp;
+													<div class="form-group">
+														<label class="col-md-3 control-label">First Image
+														</label>
+														<div class="col-md-9">
+
+														<input type="file" name="first_image_titlex" id="first_image_titlex" class="form-control" />
+														<input type="hidden" name="first_image_title" id="first_image_title" value="<?php echo $list->first_image_title; ?>" class="form-control" />
+																<?php
+																if($list->first_image_title == '' || $list->first_image_title == NULL){
+																?>
+																
+																	<h5 class="label label-danger"> Foto Tidak Ditemukan </h5>
+																	
+																<?php
+																}else{
+																?>
+																	<br>
+																	<img src="<?php echo base_url('uploads/'.$list->first_image_title); ?>" style="width:250px; height:150px;">
+																	<br>
+																<?php
+																}
+																?>
+ 
+														</div>
+													</div>
+
+												 
+													<div class="form-group">
+														&nbsp;
+														<hr>
+														<br>
+												 
+													</div>
+
+
+													<div class="form-group">
+														<label class="col-md-3 control-label">Second Title </label>
+														<div class="col-md-9">
+															<input type="text" name="second_title" value="<?php echo $list->second_title; ?>"   class="form-control"   />
+														</div>
+													</div>
+
+													<br>
+													 
+													&nbsp;
+													<div class="form-group">
+														<label class="col-md-3 control-label">Second Description Title </label>
+														<div class="col-md-9">
+														<textarea name="second_desc_title"> <?php echo $list->second_desc_title; ?> </textarea>
+														 
+														</div>
+													</div>
+
+													<br>
+													 
+													&nbsp;
+													<div class="form-group">
+														<label class="col-md-3 control-label">Second Image
+														</label>
+														<div class="col-md-9">
+
+														<input type="file" name="second_image_titlex" id="second_image_titlex" class="form-control" />
+														<input type="hidden" name="second_image_title" id="second_image_title" value="<?php echo $list->second_image_title; ?>" class="form-control" />
+																<?php
+																if($list->second_image_title == '' || $list->second_image_title == NULL){
+																?>
+																
+																	<h5 class="label label-danger"> Foto Tidak Ditemukan </h5>
+																	
+																<?php
+																}else{
+																?>
+																	<br>
+																	<img src="<?php echo base_url('uploads/'.$list->second_image_title); ?>" style="width:250px; height:150px;">
+																	<br>
+																<?php
+																}
+																?>
+ 
+														</div>
+													</div>
+													 
+												 
+					
+												 
+													
+													
+
+
+
+													</div>
+												</div>
+											</div>
+
+											 
+											 
+
+										</div>
+									</div><!-- /.col -->
+								
+								    <div  align="center" style="margin-bottom:50px;">
+                                        <button type="submit" name="save" class="btn btn-large btn-primary" > <i class="fa fa-archive"></i> Save </button>
+                                        <a class="btn btn-large btn-danger" href="<?php echo base_url('page_seo'); ?>"> <i class="fa fa-reply-all"></i> Back </a>
+                                    </div>
+																
+								</form>
 			</div>
-				<hr>
-				<br>
-				<div  align="center">
-                    <button type="submit" name="save" class="btn btn-large btn-primary" > <i class="fa fa-archive"></i> Save </button>
-                    <a class="btn btn-danger" href="<?php echo base_url('page_seo'); ?>"> <i class="fa fa-reply-all"></i> Back </a>
-                </div>
-				<br>
-				<br>
-				<br>				 
-		</form>
- 
-<script type="text/javascript">
-
-function elFinderBrowser(callback, value, meta) {
-    tinymce.activeEditor.windowManager.open({
-        file: '<?php echo base_url("file_manager/filetes"); ?>', // use an absolute path!
-        title: 'Files Manager',
-        width: 900,
-        height: 450,
-        resizable: 'yes'
-    }, {
-        oninsert: function (file, elf) {
-            var url, reg, info;
-
-            // URL normalization
-            url = file;
-
-            reg = "\/[^/]+?\/\.\.\/";
-            while (url.match(reg)) {
-                url = url.replace(reg, '/');
-            }
-
-            var split_info = file.split("/");
-
-            var filename = split_info[split_info.length - 1];
-            
-            var getsize = 0;
-            get_filesize(file, function (size) {
-                //alert("The size of " + filename + " is: " + size + " bytes.");
-                getsize = size;
-            });
-            
-            // Make file info
-            info = filename + ' (' + elf.formatSize(getsize) + ')';
-
-            // Provide file and text for the link dialog
-            if (meta.filetype == 'file') {
-                callback(url, {text: info, title: info});
-            }
-
-            // Provide image and alt text for the image dialog
-            if (meta.filetype == 'image') {
-                callback(url, {alt: info});
-            }
-
-            // Provide alternative source and posted for the media dialog
-            if (meta.filetype == 'media') {
-                callback(url);
-            }
-        }
-    });
-    return false;
-}
-
-// TinyMCE init
-tinymce.init({
-    selector: "textarea",
-    height: 400,
-    plugins: [
-        "advlist autolink lists link image charmap print preview anchor",
-        "searchreplace visualblocks code fullscreen",
-        "insertdatetime media table contextmenu paste"
-    ],
-    relative_urls: false,
-    remove_script_host: false,
-    toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
-    file_picker_callback: elFinderBrowser
-});
-
-function get_filesize(url, callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("HEAD", url, true); // Notice "HEAD" instead of "GET",
-    //  to get only the header
-    xhr.onreadystatechange = function () {
-        if (this.readyState == this.DONE) {
-            callback(parseInt(xhr.getResponseHeader("Content-Length")));
-        }
-    };
-    xhr.send();
-}
- </script>
+		</div>

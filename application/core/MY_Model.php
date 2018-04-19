@@ -77,6 +77,10 @@ class MY_Model extends CI_Model {
         return $this->db->delete($tablename);
     }
 
+    function get_footer(){
+		return $this->db->get('m_page_footer')->row();
+	}
+
 }
 
 ?>

@@ -26,7 +26,7 @@
 					</li>
 					<li><a href="<?php echo base_url('news_update'); ?>">NEWS & EVENTS</a></li>
 					<li><a href="<?php echo base_url('contact'); ?>">CONTACT</a></li>
-					<li><a href="<?php echo base_url('login'); ?>">LOGIN</a></li>
+				 
 				</ul>
 			</div>
 		</div>

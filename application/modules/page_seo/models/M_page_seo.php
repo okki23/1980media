@@ -7,6 +7,9 @@ class M_page_seo extends MY_Model {
         parent::__construct();
     } 
 	
-	
+    function get_content($tablename){
+		return $this->db->get($tablename)->row();
+	}
+
     
 }

@@ -150,6 +150,15 @@
 							</li>
 
 							<li class="">
+								<a href="<?php echo base_url('list_client'); ?>">
+									<i class="menu-icon fa fa-caret-right"></i>
+									 Client Logo
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
 								<a href="javascript:void(0);" class="dropdown-toggle">
 									<i class="menu-icon fa fa-caret-right"></i>
 
@@ -207,9 +216,10 @@
 
 					<li>
 						<a href="javascript:void(0);" class="dropdown-toggle">
-							<i class="menu-icon fa fa-desktop"></i>
+							<i class="menu-icon fa fa-align-justify"></i>
+						 
 							<span class="menu-text">
-								Home
+								Response
 							</span>
 
 							<b class="arrow fa fa-angle-down"></b>
@@ -219,15 +229,7 @@
 
 						<ul class="submenu">
 						 
-							<li class="">
-								<a href="<?php echo base_url('homepage'); ?>">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Homepage
-								</a>
-
-								<b class="arrow"></b>
-							</li>
-
+						 
 							<li class="">
 								<a href="<?php echo base_url('consultant'); ?>">
 									<i class="menu-icon fa fa-caret-right"></i>
@@ -237,14 +239,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
-								<a href="<?php echo base_url('list_client'); ?>">
-									<i class="menu-icon fa fa-caret-right"></i>
-									List Client
-								</a>
-
-								<b class="arrow"></b>
-							</li>
+						
 
 							<li class="">
 								<a href="<?php echo base_url('email_subscriber'); ?>">
@@ -267,21 +262,13 @@
 							 
 						</ul>
 					</li>
-					<li>
-						<a href="<?php echo base_url('page_about'); ?>">
-							<i class="menu-icon fa fa-star"></i>
-							<span class="menu-text"> About </span>
-						</a>
-
-						<b class="arrow"></b>
-					</li>
-
+					
 
 					<li class="">
 						<a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-lightbulb-o"></i>
+							<i class="menu-icon fa fa-desktop"></i>
 							<span class="menu-text">
-								Services
+								Pages
 							</span>
 
 							<b class="arrow fa fa-angle-down"></b>
@@ -290,6 +277,47 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
+
+							<li class="">
+								<a href="<?php echo base_url('homepage'); ?>">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Home
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+
+							<li>
+								<a href="<?php echo base_url('news_event_page'); ?>">
+									<i class="menu-icon fa fa-star"></i>
+									<span class="menu-text"> News and Event </span>
+								</a>
+
+							<b class="arrow"></b>
+							</li>
+
+							<li>
+								<a href="<?php echo base_url('contact_us_page'); ?>">
+									<i class="menu-icon fa fa-star"></i>
+									<span class="menu-text"> Contact Us</span>
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+					 
+
+							<li>
+								<a href="<?php echo base_url('page_about'); ?>">
+									<i class="menu-icon fa fa-star"></i>
+									<span class="menu-text"> About </span>
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+
 						 
 							<li class="">
 								<a href="<?php echo base_url('services_page'); ?>">
@@ -375,25 +403,9 @@
 
 
 
-					<li>
-						<a href="<?php echo base_url('news_event_page'); ?>">
-							<i class="menu-icon fa fa-star"></i>
-							<span class="menu-text"> News and Event </span>
-						</a>
+				 
 
-						<b class="arrow"></b>
-					</li>
-
-					<li>
-						<a href="<?php echo base_url('contact_us_page'); ?>">
-							<i class="menu-icon fa fa-star"></i>
-							<span class="menu-text"> Contact Us</span>
-						</a>
-
-						<b class="arrow"></b>
-					</li>
-
-					 
+				
 				</ul><!-- /.nav-list -->
 
 				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
@@ -478,23 +490,180 @@
     <script type="text/javascript">
 	$("#fixing").hide();
 	
-    $("#logox").on("change",function(){
+    $("#header_imagex").on("change",function(){
+      var filename = $('#header_imagex').val().replace(/C:\\fakepath\\/i, '');
+      $("#header_image").val(filename);
+      readURL(this);
+    });
+
+	  $("#picture_newsx").on("change",function(){
+      var filename = $('#picture_newsx').val().replace(/C:\\fakepath\\/i, '');
+      $("#picture_news").val(filename);
+      readURL(this);
+    });
+
+	$("#logo_ax").on("change",function(){
+      var filename = $('#logo_ax').val().replace(/C:\\fakepath\\/i, '');
+      $("#logo_a").val(filename);
+      readURL(this);
+	});
+	
+	$("#logo_bx").on("change",function(){
+      var filename = $('#logo_bx').val().replace(/C:\\fakepath\\/i, '');
+      $("#logo_b").val(filename);
+      readURL(this);
+	});
+	
+	$("#logo_cx").on("change",function(){
+      var filename = $('#logo_cx').val().replace(/C:\\fakepath\\/i, '');
+      $("#logo_c").val(filename);
+      readURL(this);
+	});
+
+	$("#logo_dx").on("change",function(){
+      var filename = $('#logo_dx').val().replace(/C:\\fakepath\\/i, '');
+      $("#logo_d").val(filename);
+      readURL(this);
+	});
+	
+
+	$("#logo_ex").on("change",function(){
+      var filename = $('#logo_ex').val().replace(/C:\\fakepath\\/i, '');
+      $("#logo_e").val(filename);
+      readURL(this);
+	});
+	
+
+	$("#logo_fx").on("change",function(){
+      var filename = $('#logo_fx').val().replace(/C:\\fakepath\\/i, '');
+      $("#logo_f").val(filename);
+      readURL(this);
+	});
+	
+	$("#logo_gx").on("change",function(){
+      var filename = $('#logo_gx').val().replace(/C:\\fakepath\\/i, '');
+      $("#logo_g").val(filename);
+      readURL(this);
+	});
+	
+	
+
+
+
+	$("#pict_ax").on("change",function(){
+      var filename = $('#pict_ax').val().replace(/C:\\fakepath\\/i, '');
+      $("#pict_a").val(filename);
+      readURL(this);
+	});
+	
+	$("#pict_bx").on("change",function(){
+      var filename = $('#pict_bx').val().replace(/C:\\fakepath\\/i, '');
+      $("#pict_b").val(filename);
+      readURL(this);
+	});
+	$("#pict_cx").on("change",function(){
+      var filename = $('#pict_cx').val().replace(/C:\\fakepath\\/i, '');
+      $("#pict_c").val(filename);
+      readURL(this);
+	});
+	$("#pict_dx").on("change",function(){
+      var filename = $('#pict_dx').val().replace(/C:\\fakepath\\/i, '');
+      $("#pict_d").val(filename);
+      readURL(this);
+	});
+
+
+	$("#service_picture_ax").on("change",function(){
+      var filename = $('#service_picture_ax').val().replace(/C:\\fakepath\\/i, '');
+      $("#service_picture_a").val(filename);
+      readURL(this);
+	});
+	$("#service_picture_bx").on("change",function(){
+      var filename = $('#service_picture_bx').val().replace(/C:\\fakepath\\/i, '');
+      $("#service_picture_b").val(filename);
+      readURL(this);
+	});
+	$("#service_picture_cx").on("change",function(){
+      var filename = $('#service_picture_cx').val().replace(/C:\\fakepath\\/i, '');
+      $("#service_picture_c").val(filename);
+      readURL(this);
+	});
+	$("#service_picture_dx").on("change",function(){
+      var filename = $('#service_picture_dx').val().replace(/C:\\fakepath\\/i, '');
+      $("#service_picture_d").val(filename);
+      readURL(this);
+	});
+	$("#service_picture_ex").on("change",function(){
+      var filename = $('#service_picture_ex').val().replace(/C:\\fakepath\\/i, '');
+      $("#service_picture_e").val(filename);
+      readURL(this);
+	});
+	$("#service_picture_fx").on("change",function(){
+      var filename = $('#service_picture_fx').val().replace(/C:\\fakepath\\/i, '');
+      $("#service_picture_f").val(filename);
+      readURL(this);
+	});
+	
+	$("#advg_picture_ax").on("change",function(){
+      var filename = $('#advg_picture_ax').val().replace(/C:\\fakepath\\/i, '');
+      $("#advg_picture_a").val(filename);
+      readURL(this);
+	});
+	$("#advg_picture_bx").on("change",function(){
+      var filename = $('#advg_picture_bx').val().replace(/C:\\fakepath\\/i, '');
+      $("#advg_picture_b").val(filename);
+      readURL(this);
+	});
+	$("#advg_picture_cx").on("change",function(){
+      var filename = $('#advg_picture_cx').val().replace(/C:\\fakepath\\/i, '');
+      $("#advg_picture_c").val(filename);
+      readURL(this);
+	});
+	$("#advg_picture_dx").on("change",function(){
+      var filename = $('#advg_picture_dx').val().replace(/C:\\fakepath\\/i, '');
+      $("#advg_picture_d").val(filename);
+      readURL(this);
+	});
+	$("#advg_picture_ex").on("change",function(){
+      var filename = $('#advg_picture_ex').val().replace(/C:\\fakepath\\/i, '');
+      $("#advg_picture_e").val(filename);
+      readURL(this);
+	});
+	$("#advg_picture_fx").on("change",function(){
+      var filename = $('#advg_picture_fx').val().replace(/C:\\fakepath\\/i, '');
+      $("#advg_picture_f").val(filename);
+      readURL(this);
+    });
+
+	 $("#logox").on("change",function(){
       var filename = $('#logox').val().replace(/C:\\fakepath\\/i, '');
       $("#logo").val(filename);
       readURL(this);
     });
+
+
+	$("#first_image_titlex").on("change",function(){
+      var filename = $('#first_image_titlex').val().replace(/C:\\fakepath\\/i, '');
+      $("#first_image_title").val(filename);
+      readURL(this);
+    });
+	$("#second_image_titlex").on("change",function(){
+      var filename = $('#second_image_titlex').val().replace(/C:\\fakepath\\/i, '');
+      $("#second_image_title").val(filename);
+      readURL(this);
+    });
 	$(function($){
 	
-	$('textarea[data-provide="markdown"]').each(function(){
-        var $this = $(this);
+	// $('textarea[data-provide="markdown"]').each(function(){
+    //     var $this = $(this);
 
-		if ($this.data('markdown')) {
-		  $this.data('markdown').showEditor();
-		}
-		else $this.markdown()
+	// 	if ($this.data('markdown')) {
+	// 	  $this.data('markdown').showEditor();
+	// 	}
+	// 	else $this.markdown()
 		
-		$this.parent().find('.btn').addClass('btn-white');
-    })
+	// 	$this.parent().find('.btn').addClass('btn-white');
+    // })
 	
 	
 	
@@ -679,9 +848,10 @@ function elFinderBrowser(callback, value, meta) {
 }
 
 // TinyMCE init
+ 
 tinymce.init({
     selector: "textarea",
-    height: 400,
+    height: 200,
     plugins: [
         "advlist autolink lists link image charmap print preview anchor",
         "searchreplace visualblocks code fullscreen",

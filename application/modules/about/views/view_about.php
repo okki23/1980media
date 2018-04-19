@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="<?php echo base_url('ex/css/style.css');?> ">
+  <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/style.css');?> ">
   <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Montserrat|Open+Sans|Roboto+Condensed" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -32,17 +32,17 @@ s0.parentNode.insertBefore(s1,s0);
 
 <?php echo $this->load->view('header'); ?>
 	<header class="jumbotron">
-		<img src="<?php  echo base_url(); ?>images/about.png">
+		<img src="<?php echo base_url('uploads/'.$content->header_image); ?>" class="row-fluid img1">
 	</header>
 	<div class="container-fluid">
-		<h3 class="title"><u>A Little Bit About Us</u></h3>
+		<h3 class="title"><u> <?php echo $content->first_title; ?> </u></h3>
 		<br>
     <div class="row">
       <div class="col-sm-1 col-md-1"></div>
       <div class="col-sm-10">
-		  <h5><b>We’ Revolutionize Business & Product with Awesome Team and Proven Digital Strategies</b></h5>
+		  
 		  <p align="justify">
-			1980media adalah Online Performance Marketing Agency, berdiri sejak tahun November 2016. Awal mula berdiri Founder kami menamai dengan Digital Revolution, namun dengan hadirnya Rekan Patner Bisnis yang sangat expert dibidang Online Marketing dan satu visi misi Bersama sang founder, akhirnya dinamakan 1980media yang berfokus kepada peningkatan ROI untuk para customer.
+      <?php echo $content->first_desc; ?>
 		  </p>
       </div>
     </div>
@@ -52,22 +52,22 @@ s0.parentNode.insertBefore(s1,s0);
 	<div class="container-fluid text-center middle">
 		<div class="row">
       <div class="col-sm-2 col-md-2"></div>
-      <div class="col-sm-2 col-md-2"><img src="<?php  echo base_url(); ?>images/about/consultant.png"><h5>CONSULTING</h5></div>
-			<div class="col-sm-2 col-md-2"><img src="<?php  echo base_url(); ?>images/about/research.png"><h5>RESEARCH</h5></div>
-			<div class="col-sm-2 col-md-2"><img src="<?php  echo base_url(); ?>images/about/solution.png"><h5>CONSULTING</h5></div>
-			<div class="col-sm-2 col-md-2"><img src="<?php  echo base_url(); ?>images/about/strategy.png"><h5>STRATEGY</h5></div>
+      <div class="col-sm-2 col-md-2"> <img src="<?php echo base_url('uploads/'.$content->pict_a); ?>"><h5> <?php echo $content->desc_a; ?> </h5></div>
+			<div class="col-sm-2 col-md-2"> <img src="<?php echo base_url('uploads/'.$content->pict_b); ?>"><h5> <?php echo $content->desc_b; ?> </h5></div>
+			<div class="col-sm-2 col-md-2"> <img src="<?php echo base_url('uploads/'.$content->pict_c); ?>"><h5> <?php echo $content->desc_c; ?> </h5></div>
+			<div class="col-sm-2 col-md-2"> <img src="<?php echo base_url('uploads/'.$content->pict_d); ?>"><h5> <?php echo $content->desc_d; ?> </h5></div>
       <div class="col-sm-2 col-md-2"></div>
 		</div>
 	</div>
 
   <div class="container-fluid">
-		<h3 class="title"><u>Our Vision and Mission</u></h3>
+		<h3 class="title"><u>  <?php echo $content->second_title; ?> </u></h3>
 		<br>
     <div class="row">
       <div class="col-sm-1 col-md-1"></div>
       <div class="col-sm-10 col-md-10">
     		<p>
-    			Menjadi Agency Pemasaran Digital terintegrasi terkemuka di Indonesia. Menjadi pelopor pertumbuhan pemasaran digital di Indonesia dengan berfokus pada peningkatan ROI & loyalitas pelanggan untuk mengembangkan teknologi eksklusif dan memberikan solusi juga membantu bisnis online berkembang.
+        <?php echo $content->second_desc; ?>
     		</p>
       </div>
       <div class="col-sm-1 col-md-1"></div>

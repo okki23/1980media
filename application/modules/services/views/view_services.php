@@ -32,42 +32,49 @@ s0.parentNode.insertBefore(s1,s0);
 
 <?php echo $this->load->view('header'); ?>
 	<header class="jumbotron">
-		<img src="<?php echo base_url(); ?>images/service/service.png">
+	<img src="<?php echo base_url('uploads/'.$content->header_image); ?>" class="row-fluid img1">
+ 
 	</header>
 	<div class="container-fluid service">
 		<div class="row">
+		 
 			<div class="col-md-5">
 				<div class="grey-icon-left">
-					<p><a href="seo.php">SEO & SEM</a></p>
-					<img src="<?php echo base_url(); ?>images/icons/find2.png">
+					<p><a href="<?php echo base_url($content->url_logo_a); ?>"><?php echo $content->caption_logo_a; ?></a></p>
+					<img src="<?php echo base_url('uploads/'.$content->logo_a); ?>">
+				 
 				</div>
 				<div class="grey-icon-left">
-					<p><a href="digital.php">Digital Advertising</a></p>
-					<img src="<?php echo base_url(); ?>images/icons/phone2.png">
+					<p><a href="<?php echo base_url($content->url_logo_b); ?>"><?php echo $content->caption_logo_b; ?></a></p>
+					<img src="<?php echo base_url('uploads/'.$content->logo_b); ?>">
+				 
 				</div>
 				<div class="grey-icon-left">
-					<p><a href="marketing.php">Social Media Marketing</a></p>
-					<img src="<?php echo base_url(); ?>images/icons/tweet2.png">
+					<p><a href="<?php echo base_url($content->url_logo_c); ?>"><?php echo $content->caption_logo_c; ?></a></p>
+					<img src="<?php echo base_url('uploads/'.$content->logo_c); ?>">
+				 
 				</div>
 		</div>
 		<div class="col-md-2 text-center">
-				  <img src="<?php echo base_url(); ?>images/person.png">
+		<img src="<?php echo base_url('uploads/'.$content->logo_g); ?>">
 		</div>
 		<div class="col-md-5">
+		<div class="grey-icon-right">
 				<div class="grey-icon-right">
-							<img src="<?php echo base_url(); ?>images/icons/bar2.png">
-							<p><a href="analytic.php">Analytic</a></p>
+				<img src="<?php echo base_url('uploads/'.$content->logo_d); ?>">
+							<p><a href="<?php echo base_url($content->url_logo_c); ?>"><?php echo $content->caption_logo_d; ?></a></p>
 				</div>
 				<div class="grey-icon-right">
-							<img src="<?php echo base_url(); ?>images/icons/insta2.png">
-							<p><a href="graphic.php">Design Graphic</a></p>
+				<img src="<?php echo base_url('uploads/'.$content->logo_e); ?>">
+							<p><a href="<?php echo base_url($content->url_logo_e); ?>"><?php echo $content->caption_logo_e; ?></a></p>
 				</div>
 				<div class="grey-icon-right">
-							<img src="<?php echo base_url(); ?>images/icons/screen2.png">
-							<p><a href="web_development.php">Web Development & Mobile Application</a></p>
+				<img src="<?php echo base_url('uploads/'.$content->logo_f); ?>">
+							<p><a href="<?php echo base_url($content->url_logo_f); ?>"><?php echo $content->caption_logo_f; ?></a></p>
 				</div>
 		</div>
 	</div>
+</div>
 </div>
 
 <?php echo $this->load->view('footer'); ?>

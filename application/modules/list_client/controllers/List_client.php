@@ -47,7 +47,7 @@ class List_client extends MY_Controller {
 
           }
           $data['title'] = $this->data['meta_title'];
-          $data['opt_pegawai'] = $this->ma->opt_pegawai();
+        
           $data['content'] = 'list_client/list_client_store';
           
         //session

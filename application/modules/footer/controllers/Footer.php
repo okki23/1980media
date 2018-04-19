@@ -3,9 +3,10 @@ date_default_timezone_set("Asia/Jakarta");
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Footer extends MY_Controller {
-    
-    var $parsing_form_input = array('id','konten','last_update');
-    var $tablename = 'page_footer';
+ 
+
+    var $parsing_form_input = array('id','title_about','desc_about','title_address','address','fb_link','twitter_link','youtube_link','ig_link');
+    var $tablename = 'm_page_footer';
     var $pk = 'id';
     
 
@@ -59,7 +60,7 @@ class Footer extends MY_Controller {
     }
 
     public function save() {       
-        $data = $this->ma->array_from_post(array('id','konten','last_update'));
+        $data = $this->ma->array_from_post(array('id','title_about','desc_about','title_address','address','fb_link','twitter_link','youtube_link','ig_link'));
         $id = isset($data['id']) ? $data['id'] : NULL;
         $exe = $this->ma->save($data,$this->tablename,$this->pk, $id);
        

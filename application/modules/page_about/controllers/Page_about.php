@@ -4,8 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Page_about extends MY_Controller {
     
-    var $parsing_form_input = array('id','konten','last_update');
-    var $tablename = 'page_about';
+    var $parsing_form_input = array('id','header_image','first_title','first_desc','pict_a','desc_a','pict_b','desc_b','pict_c','desc_c','pict_d','desc_d','second_title','second_desc');
+    var $tablename = 'm_page_about';
     var $pk = 'id';
     
 
@@ -55,10 +55,47 @@ class Page_about extends MY_Controller {
     }
 
     public function save() {       
-        $data = $this->ma->array_from_post(array('id','konten','last_update'));
+        $data = $this->ma->array_from_post(array('id','header_image','first_title','first_desc','pict_a','desc_a','pict_b','desc_b','pict_c','desc_c','pict_d','desc_d','second_title','second_desc'));
         $id = isset($data['id']) ? $data['id'] : NULL;
         $exe = $this->ma->save($data,$this->tablename,$this->pk, $id);
+        $this->load->library('upload');
+        $config['upload_path'] = "uploads/";
+        $config['allowed_types'] = 'gif|bmp|jpg|jpeg|png';
+        $config['max_size'] = 5000;
+        $config['remove_spaces'] = TRUE;
+        $header_image = $this->input->post('header_image');
+        
+        $pict_a = $this->input->post('pict_a');
+        $pict_b = $this->input->post('pict_b');
+        $pict_c = $this->input->post('pict_c');
+        $pict_d = $this->input->post('pict_d');
+        
+
+        
        
+        $this->upload->initialize($config);
+        if ($header_image != '') {
+            $this->upload->do_upload('header_imagex');
+        } 
+       
+        $this->upload->initialize($config);
+        if ($pict_a != '') {
+            $this->upload->do_upload('pict_ax');
+        }
+        $this->upload->initialize($config);
+        if ($pict_b != '') {
+            $this->upload->do_upload('pict_bx');
+        }
+        $this->upload->initialize($config);
+        if ($pict_c != '') {
+            $this->upload->do_upload('pict_cx');
+        }
+        $this->upload->initialize($config);
+        if ($pict_d != '') {
+            $this->upload->do_upload('pict_dx');
+        }
+        
+
         if($exe){
             echo "<script language=javascript>
              alert('Simpan Data Berhasil');

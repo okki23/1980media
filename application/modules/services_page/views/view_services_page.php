@@ -1,7 +1,7 @@
 <div class="page-content">
         <div class="page-header">
 							<h1>
-              Services  								 
+              Services   								 
 							</h1>
 
 						</div><!-- /.page-header -->
@@ -12,8 +12,12 @@
               <table id="dynamic-table" class="table table-striped table-bordered table-hover">
 <thead>
   <tr>
-    <th>Konten </th>
-    <th>Last Update</th>
+    <th>Caption A</th>
+    <th>Caption B</th>
+    <th>Caption C</th>
+    <th>Caption D</th>
+    <th>Caption E</th>
+    <th>Caption F</th>
      
     <th>Opsi</th> 
   </tr>
@@ -23,8 +27,12 @@
 foreach($list as $key => $value){
 ?>
 <tr>
-    <td><?php echo $value->konten; ?> </td>
-    <td><?php echo $value->last_update; ?> </td>
+    <td><?php echo $value->caption_logo_a; ?> </td>
+    <td><?php echo $value->caption_logo_b; ?> </td>
+    <td><?php echo $value->caption_logo_c; ?> </td>
+    <td><?php echo $value->caption_logo_d; ?> </td>
+    <td><?php echo $value->caption_logo_e; ?> </td>
+    <td><?php echo $value->caption_logo_f; ?> </td>
  
     <td>
     <a href="<?php echo base_url('services_page/edit/'.$value->id); ?>" class="label label-warning"> <i class="fa fa-pencil"></i>  Edit </a> &nbsp;

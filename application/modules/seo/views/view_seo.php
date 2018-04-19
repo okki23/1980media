@@ -35,17 +35,17 @@ s0.parentNode.insertBefore(s1,s0);
 </header>
   <div class="container-fluid">
       <div class="row">
-        <h3 class="title"><u>Apa itu Search Engine Optimization (SEO)?</u></h3>
+        <h3 class="title"><u><?php echo $content->first_title; ?> </u></h3>
         <div class="col-sm-1 text-center"></div>
         <div class="col-sm-3 col-sm-push-7 text-center">
-          <img src="<?php echo base_url(); ?>images/SEO.png" alt="Apa itu Search Engine Optimization (SEO)?" >
+          <img src="<?php echo base_url('uploads/'.$content->first_image_title); ?>" alt="<?php echo $content->first_title; ?>" >
         </div>
         <div class="col-sm-7 col-sm-pull-3">
-          <p>Search Engine Optimization (SEO) adalah proses peningkatan rangking dan visibilitas website / brand anda di search engine. Mesin pencari seperti Google akan menampilkan hasil organik berdasarkan kata kunci pencarian dan listing di Google yang gratis.</p>
-          <p><strong>Mengapa SEO?</strong></p>
-          <p>Lalu lintas gratis ke situs web Anda kemudian dapat dengan mudah diperoleh begitu peringkat Anda lebih tinggi. Situs peringkat yang lebih tinggi umumnya dianggap lebih kredibel, 90% pengguna mesin pencari mengklik 3 daftar pertama. Agar mendapat peringkat lebih tinggi, kami akan memastikan bahwa situs web Anda relevan dengan penawaran produk atau layanan Anda.</p>
-          <p><strong>Metodologi Kami</strong></p>
-          <p>1980media memahami bahwa optimasi SEO adalah investasi jangka panjang untuk klien kami. Oleh karena itu, kami hanya memanfaatkan teknik white-hat SEO Indonesia dan benar-benar mematuhi pedoman kualitas mesin pencari, sebagai bagian dari due diligence kami.</p>
+
+        <div style="float:right; margin-right:10px;">
+       
+         <p><?php echo $content->first_desc_title; ?> </p>
+        </div>
         </div>
         <div class="col-sm-1 col-md-1"></div>
       </div>
@@ -53,13 +53,13 @@ s0.parentNode.insertBefore(s1,s0);
 
   <div id="sem" class="container-fluid bg-grey bg-center">
       <div class="row">
-        <h3 class="title"><u>Apa itu Search Engine Marketing (SEM) ?</u></h3>
+        <h3 class="title"><u><?php echo $content->second_title; ?></u></h3>
         <div class="col-sm-1"></div>
         <div class="col-sm-3 col-md-4 col-lg-3">
-          <img src="<?php echo base_url(); ?>images/SEM.png" alt="Apa itu Search Engine Optimization (SEO)?" class="img-responsive">
+        <img src="<?php echo base_url('uploads/'.$content->second_image_title); ?>" alt="<?php echo $content->second_title; ?>" >
         </div>
         <div class="col-sm-7 col-md-8 col-lg-7">
-          <p>Menarik lebih banyak pengunjung yang penting bagi bisnis Anda dengan kata kunci yang sangat bertarget menggunakan SEM atau Google AdWords. SEM pada akhirnya dapat menumbuhkan audiens Anda dengan penargetan keywords tertentu dan menghemat anggaran online Anda dengan menawar kata kunci pencarian atau kata kunci yang relevan untuk bisnis Anda. Dengan penelitian dan analisis kata kunci yang luas, kami memastikan Anda mendapatkan hasil optimal untuk kampanye Anda semurah mungkin.</p>
+        <p><?php echo $content->second_desc_title; ?> </p>
         </div>
         <div class="col-sm-1"></div>
       </div>

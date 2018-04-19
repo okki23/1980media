@@ -16,16 +16,69 @@
 							<form action="<?php echo base_url('footer/save') ;?>" method="POST">
 		<div class="col-md-12">
                  <input type="hidden" name="id" value="<?php echo $list->id; ?>" >
-                 <input type="hidden" name="last_update" value="<?php echo date('Y-m-d H:i:s'); ?>" >
-				 
-               
-		 
+                
+				<div class="form-group">
+					<label for="exampleInputEmail1">
+						Title 
+					</label>
+					 <input type="text" name="title_about" class="form-control"  value="<?php echo $list->title_about;?>"  >
+				</div>
 
 				<div class="form-group">
 					<label for="exampleInputEmail1">
-						Isi Konten 
+						Description 
 					</label>
-					 <input type="text" name="konten" class="form-control"  value="<?php echo $list->konten;?>"  >
+					<input type="text" name="desc_about" class="form-control"  value="<?php echo $list->desc_about;?>"  >
+  				 
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">
+						Title Address 
+					</label>
+					<input type="text" name="title_address" class="form-control"  value="<?php echo $list->title_address;?>"  >
+  				 
+				</div>
+				
+				<div class="form-group">
+					<label for="exampleInputEmail1">
+						Address 
+					</label>
+					<textarea name="address" class="form-control" > <?php echo $list->desc_about; ?> </textarea>
+					<!-- <input type="text" name="address" class="form-control"  value="<?php echo $list->desc_about;?>"  > -->
+  				 
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">
+						FB link 
+					</label>
+					<input type="text" name="fb_link" class="form-control"  value="<?php echo $list->fb_link;?>"  >
+  				 
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">
+						Twitter link 
+					</label>
+					<input type="text" name="twitter_link" class="form-control"  value="<?php echo $list->twitter_link;?>"  >
+  				 
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">
+						Youtube link 
+					</label>
+					<input type="text" name="youtube_link" class="form-control"  value="<?php echo $list->youtube_link;?>"  >
+  				 
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">
+						Instagram link 
+					</label>
+					<input type="text" name="ig_link" class="form-control"  value="<?php echo $list->ig_link;?>"  >
+  				 
 				</div>
 				 
 				 

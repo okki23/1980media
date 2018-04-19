@@ -47,6 +47,7 @@ s0.parentNode.insertBefore(s1,s0);
 	{
 		width:100%;
 		margin:0%;
+ 
 
 		padding:0px;
 		position:relative;
@@ -64,15 +65,36 @@ s0.parentNode.insertBefore(s1,s0);
 <body>
 <?php echo $this->load->view('header'); ?>
 	<header>
-		<img src="<?php echo base_url(); ?>images/contact1.jpg">
+	<img src="<?php echo base_url('uploads/'.$content->header_image); ?>" class="row-fluid img1">
 	</header>
-	
+
+<div class="col-md-12"> 
+<?php
+if($content->title == '' && $content->desc == '') {
+?>
+ 
+<?php
+}else{
+?>
+
+
+<h1 align="center"> <?php echo $content->title; ?> </h1>
+<p align="center"> <?php echo $content->desc; ?> </p>
+
+
+<?php
+}
+?>
+
+
+</div>
+
 	<div class="container-fluid maps">
 		<div class="row">
-			<div class="col-sm-6 col-xs-12">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.443426318679!2d106.7789503143133!3d-6.205090995507988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6db3dac5da3%3A0xe876541c9ae59eb2!2sJl.+Salam+Raya+Blok+Ilyas+No.65%2C+Sukabumi+Utara%2C+Kb.+Jeruk%2C+Kota+Jakarta+Barat%2C+Daerah+Khusus+Ibukota+Jakarta+11540!5e0!3m2!1sen!2sid!4v1518455013148" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="col-md-6">
+				<iframe src="<?php echo $content->link_maps; ?>" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
-			<div class="col-sm-6" style="">
+			<div class="col-md-6">
 			<form id="contactForm" name="sentMessage" action="<?php echo base_url('list_contact/save'); ?>" method="POST">
               <input type="hidden" class="form-control"  name="source" type="text" value="contact">
 					<div class="form-group">

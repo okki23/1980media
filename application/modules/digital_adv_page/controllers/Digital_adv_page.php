@@ -2,10 +2,10 @@
 date_default_timezone_set("Asia/Jakarta");
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Digital_adv_page extends MY_Controller {
+class Digital_adv_page extends MY_Controller { 
     
-    var $parsing_form_input = array('id','konten','last_update');
-    var $tablename = 'page_digital_adv';
+    var $parsing_form_input = array('id','header_image','first_title','first_desc_title','list_a','list_b','list_c','list_d');
+    var $tablename = 'm_page_digitaladv';
     var $pk = 'id';
     
 
@@ -55,10 +55,30 @@ class Digital_adv_page extends MY_Controller {
     }
 
     public function save() {       
-        $data = $this->ma->array_from_post(array('id','konten','last_update'));
+        $data = $this->ma->array_from_post(array('id','header_image','first_title','first_desc_title','list_a','list_b','list_c','list_d'));
         $id = isset($data['id']) ? $data['id'] : NULL;
         $exe = $this->ma->save($data,$this->tablename,$this->pk, $id);
+        $this->load->library('upload');
+        $config['upload_path'] = "uploads/";
+        $config['allowed_types'] = 'gif|bmp|jpg|jpeg|png';
+        $config['max_size'] = 5000;
+        $config['remove_spaces'] = TRUE;
+
+        $header_image = $this->input->post('header_image');
+        
+        $first_image_title = $this->input->post('first_image_title');
+        $second_image_title = $this->input->post('second_image_title');
+         
+    
+        $this->upload->initialize($config);
+        if ($header_image != '') {
+            $this->upload->do_upload('header_imagex');
+        } 
        
+       
+     
+         
+          
         if($exe){
             echo "<script language=javascript>
              alert('Simpan Data Berhasil');

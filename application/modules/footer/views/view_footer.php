@@ -13,8 +13,8 @@
     <table id="dynamic-table" class="table table-striped table-bordered table-hover">
 <thead>
   <tr>
-    <th>Konten </th>
-    <th>Last Update</th>
+    <th>Title </th>
+    <th>Desc</th>
      
     <th>Opsi</th> 
   </tr>
@@ -24,8 +24,8 @@
 foreach($list as $key => $value){
 ?>
 <tr>
-    <td><?php echo $value->konten; ?> </td>
-    <td><?php echo $value->last_update; ?> </td>
+    <td><?php echo $value->title_about; ?> </td>
+    <td><?php echo $value->desc_about; ?> </td>
  
     <td>
     <a href="<?php echo base_url('footer/edit/'.$value->id); ?>" class="label label-warning"> <i class="fa fa-pencil"></i>  Edit </a> &nbsp;
